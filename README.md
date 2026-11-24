@@ -108,8 +108,8 @@ python fetch_data.py --symbol AAPL --start 2019-07-23 --end 2025-07-18 --output 
 - **Exogenous Factors & Discretization:** Excludes trading volume, macroeconomic releases, and earnings events, and compresses continuous returns into seven discrete bins.
 
 ## Reports
-- [Full Technical Report (English PDF)](reports/report_en.pdf)
-- [Full Technical Report (Persian PDF)](reports/report_fa.pdf)
+- [Full Technical Report (English PDF)](reports/report_english.pdf)
+- [Full Technical Report (Persian PDF)](reports/report_persian.pdf)
 
 
 ## Author
