@@ -1,0 +1,24 @@
+AAPL Daily Return Markov Chain Analysis - Summary Report
+==========================================================
+
+Date range: 2019-07-23 to 2025-07-18
+Total trading days: 1,506
+Total transitions:  1,505
+
+Chain Structural Properties
+------------------------------
+Regular (ergodic):         True (P^2 > 0)
+Absorbing states:          None
+Second eigenvalue |lam_2|: 0.135085
+Stationary residual:       1.53e-16
+
+Empirical vs. Stationary Distribution & Mean Recurrence Time
+------------------------------------------------------------
+state  count  empirical_prob  stationary_prob  mean_recurrence_days
+   R1    164        0.108898         0.108970              9.176829
+   R2    166        0.110226         0.110299              9.066265
+   R3    363        0.241036         0.241196              4.146006
+   R4      7        0.004648         0.004651            215.000000
+   R5    387        0.256972         0.256478              3.898964
+   R6    235        0.156042         0.156146              6.404255
+   R7    184        0.122178         0.122259              8.179348
