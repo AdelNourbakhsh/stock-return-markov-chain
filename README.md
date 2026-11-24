@@ -18,7 +18,7 @@ Daily adjusted closing prices for **AAPL** from **2019-07-23 to 2025-07-18** (**
 
 ### Key Structural Findings
 - **Regular / Ergodic Chain:** Every entry of $P^2$ is strictly positive ($\min(P^2) = 0.0036 > 0$), proving the chain is **irreducible**, **aperiodic**, and **free of absorbing states**. Consequently, all states are positive recurrent and a unique stationary distribution $\pi$ exists.
-- **Rapid Convergence:** The second-largest eigenvalue modulus is $|\lambda_2| = 0.1351$, driving rapid exponential convergence to the stationary distribution (maximum deviation $\|\pi^{(n)} - \pi\|_\infty < 10^{-4}$ within 5 trading days even from the rarest point-mass initial state `R4`).
+- **Rapid Convergence:** The second-largest eigenvalue modulus is $|\lambda_2| = 0.1351$, driving rapid exponential convergence to the stationary distribution (maximum deviation $\lVert \pi^{(n)} - \pi \rVert_\infty < 10^{-4}$ within 5 trading days even from the rarest point-mass initial state `R4`).
 - **Long-Run Regime Dominance:** Mild daily moves dominate AAPL's long-run behavior—`R5` ($0\%$ to $1\%$: **25.65%**) and `R3` ($-1\%$ to $0\%$: **24.12%**) together account for nearly half of all trading days, whereas exact zero-return days (`R4`: **0.47%**) occur on average once every **215 trading days**.
 
 ## Transition Probability Matrix ($P$)
@@ -49,7 +49,11 @@ Solving $\pi P = \pi$ subject to $\sum_i \pi_i = 1$ yields the unique stationary
 
 ## First-Return Probabilities ($f_{ii}^{(n)}$)
 
-Computed via the exact recurrence $f_{ii}^{(n)} = P^{(n)}_{ii} - \sum_{m=1}^{n-1} f_{ii}^{(m)} P^{(n-m)}_{ii}$ for steps $n = 1, \dots, 5$:
+Computed via the exact recurrence for steps $n = 1, \dots, 5$:
+
+$$
+f_{ii}^{(n)} = P^{(n)}_{ii} - \sum_{m=1}^{n-1} f_{ii}^{(m)} P^{(n-m)}_{ii}
+$$
 
 | State | $n=1$ | $n=2$ | $n=3$ | $n=4$ | $n=5$ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
