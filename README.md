@@ -107,5 +107,10 @@ python fetch_data.py --symbol AAPL --start 2019-07-23 --end 2025-07-18 --output 
 - **Time-Homogeneous Transitions:** Uses a stationary transition matrix $P$ across all market regimes (e.g., high-volatility drawdowns vs. bull markets).
 - **Exogenous Factors & Discretization:** Excludes trading volume, macroeconomic releases, and earnings events, and compresses continuous returns into seven discrete bins.
 
+## Reports
+- [Full Technical Report (English PDF)](reports/report_en.pdf)
+- [Full Technical Report (Persian PDF)](reports/report_fa.pdf)
+
+
 ## Author
 - **Adel Nourbakhsh**
